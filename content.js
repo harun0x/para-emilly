@@ -106,7 +106,7 @@ const SITE_CONTENT = {
       number: "06",
       eyebrow: "dois lugares, uma história",
       title: "Nunca pude segurar sua mão. Mesmo assim, você alcançou partes de mim que quase ninguém alcançou.",
-      text: "Nós não tivemos encontros, passeios ou fotografias juntas. Tivemos presença de outro tipo: a vontade de contar o dia, a espera por uma mensagem, o conforto de uma voz e a sensação de ser compreendida mesmo estando longe.",
+      text: "Nós não tivemos encontros, passeios ou fotografias juntos. Tivemos presença de outro tipo: a vontade de contar o dia, a espera por uma mensagem, o conforto de uma voz e a sensação de ser compreendido mesmo estando longe.",
       leftLabel: "onde eu estava",
       rightLabel: "onde você estava",
       centerLabel: "o que existiu entre nós"
@@ -130,7 +130,7 @@ const SITE_CONTENT = {
       number: "08",
       eyebrow: "sem cobrança, sem obrigação",
       title: "Uma carta que você pode abrir quando estiver pronta.",
-      intro: "O conteúdo só aparece quando você tocar. Não tem problema se não quiser abrir, ou se não quiser para ler. O que importa é que essa carta existe, guardando tudo o que eu sinto por você.",
+      intro: "O conteúdo só aparece quando você tocar. Não tem problema se não quiser abrir, ou se não quiser ler. O que importa é que essa carta existe, guardando tudo o que eu sinto por você.",
       button: "abrir a carta",
       salutation: "Emilly,",
       paragraphs: [
@@ -149,7 +149,7 @@ const SITE_CONTENT = {
       nav: "Para terminar",
       eyebrow: "a última página",
       title: "A tela sempre esteve entre nós. O sentimento, nunca.",
-      text: "Obrigada por ter sido amor, companhia e casa mesmo de tão longe. Você continua sendo profundamente importante para mim.",
+      text: "Obrigado por ter sido amor, companhia e casa mesmo de tão longe. Você continua sendo profundamente importante para mim.",
       small: "Feito com cuidado, amor e especialmente para você.",
       restart: "ver desde o começo"
     }
