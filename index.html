@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0910">
+  <meta name="description" content="Uma experiência feita com carinho.">
+  <title>Entre telas, você</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body class="is-locked">
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="preloader" id="preloader" role="dialog" aria-modal="true" aria-labelledby="preloaderTitle">
+    <div class="preloader__stars" id="preloaderStars" aria-hidden="true"></div>
+    <div class="preloader__orb" aria-hidden="true"></div>
+    <div class="preloader__content">
+      <p class="overline" id="preloaderEyebrow"></p>
+      <h1 id="preloaderTitle"></h1>
+      <p id="preloaderText"></p>
+      <button class="primary-button" id="startButton" type="button">
+        <span id="startButtonLabel"></span>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <span class="preloader__hint">toque para abrir e iniciar a música</span>
+    </div>
+  </div>
+
+  <header class="topbar" id="topbar" hidden>
+    <button class="icon-button" id="menuButton" type="button" aria-label="Abrir capítulos" aria-expanded="false">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+
+    <div class="topbar__identity">
+      <span id="siteMark"></span>
+      <i></i>
+      <span id="pageCounter">01 / 01</span>
+    </div>
+
+    <button class="audio-button" id="audioButton" type="button" aria-label="Pausar música" aria-pressed="true">
+      <span class="audio-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span id="audioText">música</span>
+    </button>
+  </header>
+
+  <aside class="chapter-menu" id="chapterMenu" aria-hidden="true">
+    <button class="chapter-menu__backdrop" id="menuBackdrop" type="button" aria-label="Fechar capítulos"></button>
+    <div class="chapter-menu__panel">
+      <div class="chapter-menu__heading">
+        <div>
+          <p class="overline">Navegação</p>
+          <h2>Capítulos</h2>
+        </div>
+        <button class="icon-button" id="closeMenuButton" type="button" aria-label="Fechar capítulos">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <nav id="chapterList" aria-label="Capítulos do site"></nav>
+      <p class="chapter-menu__help">No celular, deslize para a esquerda ou para a direita.</p>
+    </div>
+  </aside>
+
+  <main class="experience" id="experience" aria-live="polite" inert>
+    <div class="pages" id="pages"></div>
+  </main>
+
+  <div class="bottom-navigation" id="bottomNavigation" hidden>
+    <div class="progress"><span id="progressFill"></span></div>
+    <div class="bottom-navigation__row">
+      <button class="nav-button" id="previousButton" type="button" aria-label="Página anterior">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></svg>
+        <span>voltar</span>
+      </button>
+      <div class="swipe-hint" id="swipeHint"><span></span> deslize</div>
+      <button class="nav-button nav-button--next" id="nextButton" type="button" aria-label="Próxima página">
+        <span>continuar</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <audio id="soundtrack" preload="metadata" loop></audio>
+
+  <dialog class="photo-viewer" id="photoViewer">
+    <button class="photo-viewer__close" id="closePhotoViewer" type="button" aria-label="Fechar foto">×</button>
+    <img id="viewerImage" alt="">
+    <div class="photo-viewer__caption">
+      <p id="viewerEyebrow"></p>
+      <h3 id="viewerTitle"></h3>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript>Ative o JavaScript para abrir esta experiência.</noscript>
+</body>
+</html>
