@@ -1,26 +1,3 @@
-# Entre telas, você
-
-Site romântico em formato de páginas horizontais, pensado para celular e para uma história vivida pela internet.
-
-## O que foi melhorado
-
-- páginas em tela cheia;
-- deslize para os lados no celular;
-- botões de avançar e voltar;
-- menu com todos os capítulos;
-- setas do teclado no computador;
-- música com controle de pausa;
-- galeria horizontal com ampliação das fotos;
-- carta que só abre quando a pessoa escolher;
-- visual adaptado a iPhone e Android;
-- textos e fotos configurados em um único arquivo.
-
-## Arquivo principal para editar
-
-Abra `content.js`. Quase toda a personalização é feita nele.
-
-Troque apenas os conteúdos entre aspas. Não apague vírgulas, chaves, colchetes ou aspas.
-
 ## Colocar as fotos
 
 1. Abra `assets/fotos`.
